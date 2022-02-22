@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //funciones flecha
+        /*
+        //funcion tradicional
+        function ask(question, yes, no){
+            if(confirm(question))yes();
+            else no();
+        }
+        ask(
+            "¿estas deacuerdo?",
+            function(){alert("haz estado deacuerdo");},
+            function(){alert("Tu no haz estado deacuerdo");}
+        );
+        */
+        /*
+        //con funcion flecha
+        let ask = (question, yes, no)=>{
+            if(confirm(question)) yes()
+            else no();
+        }
+        ask(
+            "Deseas continuar",
+            () => alert("Continuar...."),
+            () => alert("saliendo.....")
+        )*/
+    </script>
+        
+        <script>
+            /*
+        //prototipos
+        const drinks = ['Agua', 'Cacaolat', 'Jagger'];
+        const person = {
+            name: 'Germán',
+            age: 33,
+            getNameText() {
+                return `Mi nombre es ${this.name}`
+                }
+            }
+            console.log(person.getNameText())
+            // Mi nombre es Germán
+
+            person.getAgeText = function(){
+            return `Mi edad es ${this.age}`
+            }
+
+            console.log(person.getAgeText())
+            // Mi edad es 33
+
+            person.hobby = 'Beber cerveza'
+            console.log(`Me gusta ${person.hobby.toLowerCase()}, yay!`)
+            // Me gusta beber cerveza, yay!
+            
+            drinks.info = 'Estas son las bebidas que me gusta tomar'
+            console.log(drinks.info)
+            // Estas son las bebidas que me gusta tomar
+
+            drinks.getFirstDrink = function(){
+            return this[0]
+            }
+            console.log(`La primera bebida es ${drinks.getFirstDrink()}`)
+            // La primera bebida es Agua
+            */
+    </script>
+    <script>
+        /*
+        //herencia prototipica
+        let animal = {
+        eats: true,
+        walk() {
+            alert("Animal da un paseo");
+        }
+        };
+
+        let rabbit = {
+        jumps: true,
+        __proto__: animal
+        };
+
+        let longEar = {
+        earLength: 10,
+        __proto__: rabbit
+        };
+
+        // walk se toma de la cadena prototipo
+        longEar.walk(); // Animal da un paseo
+        alert(longEar.jumps); // verdadero (desde rabbit)
+        */
+    </script>
+    <script>
+        /*
+        //clases y herenciass
+        class Person {
+        constructor(first, last, age, gender, interests) {
+            this.name = {
+            first,
+            last
+            };
+            this.age = age;
+            this.gender = gender;
+            this.interests = interests;
+        }
+
+        saludo() {
+            console.log(`Hi! soy  ${this.name.first}`);
+        };
+
+        despedida() {
+            console.log(`${this.name.first} ha dejado la escuela. ¡Adiós por ahora!`);
+        };
+        }
+        let han = new Person('Han', 'Solo', 25, 'male', ['pintar']);
+        han.saludo();
+        // Hi! I'm Han
+
+        let leia = new Person('Leia', 'Organa', 19, 'female' ['estudiante']);
+        leia.despedida();
+        // Leia has left the student. Bye for now
+        */
+    </script>
+
+</body>
+</html>
